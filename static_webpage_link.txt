@@ -1,0 +1,1 @@
+The static webpage can be found here - https://movietalkwebapp.s3.us-east-2.amazonaws.com/index.html
