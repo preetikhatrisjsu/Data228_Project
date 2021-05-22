@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Wizards At Work</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+   <link rel="stylesheet" href="static/css/base.css">
+   <link rel="stylesheet" href="static/css/vendor.css">  
+   <link rel="stylesheet" href="static/css/main.css">  
+
+   <!-- script
+   ================================================== -->
+	<script src="static/js/modernizr.js"></script>
+	<script src="static/js/pace.min.js"></script>
+
+</head>
+
+<body id="top">
+
+
+<!-- Sentiment Analysis
+   ================================================== -->
+   <section id="home" style="background-image: url(./static/images/IMDB.jpg);">
+    <div class="overlay"></div>
+    <div class="home-content-table">  
+       <div class="home-content-tablecell">
+        <div class="row">
+          <div class="col-twelve">            
+            <h3 class="animate-intro"></h3>
+            <h1 class="animate-intro">
+              Movie Talk<br/>
+              By<br/>
+              Wizards At Work
+            </h1> 
+            <div class="more animate-intro">
+              <a class="smoothscroll button stroke" href="#DP">
+                Learn More
+              </a>
+            </div>
+            </div>    
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+       </div> <!-- end home-content-tablecell -->        
+    </div> <!-- end home-content-table -->
+   </section> <!-- end home -->
+
+
+<!-- Data Preprocessing
+   ================================================== -->
+   <section id="DP">
+   <section id="about">
+    <div class="row about-wrap" style="max-width: 1075px;">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">Abstract</h3>
+          <p  class="lead animate-this" style="text-align: justify;">
+            The Internet Movie Database (IMDb) is a website that acts as a global film database.This website provides a wealth of public information about films, including the title, the year of release, the genre, the audience, critics' ratings, the length of the film, the synopsis of the film, actors, directors, and much more.Given the vast amount of information available on this site, we thought it would be interesting to examine the data on movies on the IMDb website from 2000 to 2017.
+Our project focuses on such IMDb datasets, with one dataset focusing on 45,000 movies and containing 26 million ratings from 270,000 users on a scale of 1-5, and the other dataset focusing on 45,000 movies and containing 26 million ratings from 270,000 users.This dataset includes films that were released on or before July 1, 2017.This dataset has been normalized and added to the Ohio S3 bucket.We also took another dataset with 6 million records, which we put in the Oregon S3 bucket, and created a single cluster in Ohio where the tables for all the datasets were created.
+            </p>
+        </div>   
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+<!-- Stages of Data Processing
+   ================================================== -->
+   <section id="2010" >
+    <section id="about" >
+      <div class="row-fluid">
+        <div class="col-full">
+          <div class="about-profile-bg"></div>
+          <div class="intro">
+            <h3 class="animate-this">Data SourceS</h3></div>
+            <div class="col-full">
+              <div class="col-twelve">
+                <div class="col-six"><h5>KAGGLE</h5>
+                  <br/></div>
+                <div class="col-six"><h5>IMDB</h5>
+                  <br/></div>
+              </div>
+            </div>
+            <br/>   
+            <div class="col-full">            
+              <div class="more animate-intro">
+                <div class="col-twelve">
+                  <div class="col-six" style="background-image: url(./static/images/movietime.jpeg);background-size: cover;background-attachment: fixed;background-position: 65%;padding: 60px">
+                    <h5>The Movies Dataset</h5>
+                    <h5>By Rounak Banik</h5>
+                    <h5><span>700 MB</span> Dataset</h5>
+                  </div>
+                  <div class="col-six" style="background-image: url(./static/images/dataset-cover-imdb.jpeg);background-size: cover;background-attachment: fixed;background-position: 35%;padding: 60px">
+                    <h5>&nbsp</h5>
+                    <h5>&nbsp</h5>
+                    <h5 style="text-align: right;"><span>1.5 GB</span> Dataset</h5>
+                  </div>
+                </div> 
+              </div>   
+            </div> <!-- end col-twelve --> 
+          </div> <!-- end home-content-table -->
+        </div> <!-- end col-full  -->
+      </div> <!-- end about-wrap  -->
+    </section> <!-- end about -->
+  </section>
+
+  <!-- about
+   ================================================== -->
+   <section id="about" style="background: black;">
+    <div class="row-fluid">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">Analysis</h3>
+          <div class="col-full">
+            <div class="col-md-12">
+                <h5 style="color: #fff">Records</h5>
+                <p class="counter" style="font-size: 55px;font-family: monospace;">876684</p><br/>
+            </div>
+          </div>
+          <div class="col-full" style="margin-top: 25px;font-family: monospace;">            
+            <div class="more animate-intro">
+              <div class="col-twelve">
+                <div class="col-three">
+                  <h5 style="color: #fff;margin-top: 5px;" for="Records">Movies</h5>
+                  <p class="counter" style="font-size: 55px;margin-top:5px;">43152</p>
+                </div>
+                <div class="col-three">
+                  <h5 style="color: #fff;margin-top: 5px;" for="Records">Ratings</h5>
+                  <p class="counter" style="font-size: 55px;margin-top:5px;">876684</p>
+                </div>
+                <div class="col-three">
+                  <h5 style="color: #fff;margin-top: 5px;" for="Records">Tag Applications</h5>
+                  <p class="counter" style="font-size: 55px;margin-top:5px;">750000</p>
+                </div>
+                <div class="col-three">
+                  <h5 style="color: #fff;margin-top: 5px;" for="Records">Users</h5>
+                  <p class="counter" style="font-size: 55px;margin-top:5px;">270000</p>
+                </div>
+              </div> 
+            </div>   
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+   
+   <section id="home" style="background-image: url(./static/images/interval.jpeg);">
+    <div class="overlay"></div>
+    <div class="home-content-table">  
+       <div class="home-content-tablecell">
+        <div class="row">
+          <div class="col-twelve">            
+            <h3 class="animate-intro"></h3>
+            <!-- <h1 class="animate-intro">
+              Lets take a break ??
+            </h1> -->
+            <h1>
+              Not yet guys, Hold on to your seats
+            </h1> 
+            <div class="more animate-intro">
+              <a class="smoothscroll button stroke" href="#aboutAnalytics">
+                Learn More
+              </a>
+            </div>
+            </div>    
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+       </div> <!-- end home-content-tablecell -->        
+    </div> <!-- end home-content-table -->
+   </section> <!-- end home -->
+
+   <section id="about">
+    <div class="row">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this" style="margin-bottom: 50px;">Analysis & Visualization</h3>
+          <div class="col-full">            
+            <div class="more animate-intro">
+              <h5>SNS Plot Visuals for audience ratings based on critics ratings between 2000 and 2017.</h5>
+              <div class="col-twelve">
+                <div class="col-six">
+                  <p for="Records">Graphical Representation</p>
+                  <img src="static/images/outputs/audience ratings based on critics.png" alt="">
+                </div>
+                <div class="col-six">
+                  <p for="Records">Hexagonal Representation</p>
+                  <img src="static/images/outputs/Hexagonal audience ratings on critics.png" alt="">
+                </div>
+              </div>
+              <p style="margin-bottom: 50px;">Based on the above plots the ratings are strong in the band of 5/10 to 8/10.</p> 
+            </div>   
+          </div> <!-- end col-twelve --> 
+          <br/><br/><br/>
+          <h5 style="margin-bottom: 40px;">DataFrame Distribution by Year, Critics, Duration, Gross & Audience</h5>
+          <div style="margin-bottom: 50px;" class="col-full">
+            <div class="col-twelve">
+              <img src="static/images/outputs/dataplot-for-columns.png" alt="">
+            </div>
+            <div class="col-twelve" style="margin-top: 40px;">
+              <p style="margin-bottom: 5px;">- Many movies were released in the year 2000, 2009 and 2017. -</p>
+              <p style="margin-bottom: 5px;">- Most critics ratings are between 2 to 8. -</p>
+              <p style="margin-bottom: 5px;">- Most of the Audience Ratings are between 6/10 and 7/10. -</p>
+              <p style="margin-bottom: 5px;">- Most of films have a duration of about 100 minutes (1h40). -</p>
+              <p style="margin-bottom: 5px;">- Most movies have a gross between 0 and 100 million $. -</p>
+            </div>
+          </div>
+          <br/><br/><br/>
+          <h5 style="margin-bottom: 40px;">Visualization of histograms of movies by genre between 2000 and 2017</h5>
+          <div class="col-full">
+            <div class="more animate-intro">
+              <div class="col-twelve" >
+                <img src="static/images/outputs/movie gross distribution.png" alt="">
+              </div>
+              <div class="col-twelve" style="margin-bottom: 70px;">
+                <p style="margin-bottom: 5px;">- Movies with genres biography, comedy, crime, drama and horror were the most released between 2000 and 2017. and a fewer mystery, western or war movies.
+                   -</p>
+                <p style="margin-bottom: 5px;">- Action, drama, and mystery movies earned the most millions. -</p>
+              </div>
+              <br/><br/>
+              
+              <h5>Audience Histogram by genre of movie between 2000 and 2017</h5>
+              <div class="col-twelve" style="margin-top: 30px;">
+                <img src="static/images/outputs/Movie Audience rating distribution.png" alt="">
+              </div>
+              <div class="col-twelve" style="margin-bottom: 70px;">
+                <p style="margin-bottom: 5px;">- Movies that were most appreciated by the audience were action, adventure, animation, biography, comedy, crime, documentary, drama, mystery and science-fiction. -</p>
+              </div>
+              <br/><br/>
+              <h5 style="margin-top: 40px;">Critics Histogram by genre of movie between 2000 and 2017</h5>
+              <div class="col-twelve" style="margin-top: 30px;">
+                <img src="static/images/outputs/movie critic rating distribution.png" alt="">
+              </div>
+              <div class="col-twelve" style="margin-bottom: 70px;">
+                <p style="margin-bottom: 5px;">- Movies that were the top rated films by critics were adventure, animation, biography, comedy, documentary, drama, science fiction and mystery. -</p>
+              </div>
+              <br/><br/>
+              <h5 style="margin-top: 40px;">Boxplot for genres of movies between 2000 and 2017</h5>
+              <div class="col-twelve" style="margin-top: 50px;">
+                <img src="static/images/outputs/genre vs other columns.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div> <!-- end row --> 
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+   <section id="about" style="background: black;">
+    <div class="row">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">FACET GRID</h3>
+          <h5 style="color: #fff;">Latest Movies Analysis</h5>
+          <div class="col-full">            
+            <div class="more animate-intro">
+              <div class="col-twelve" style="margin-bottom: 30px;">
+                <h5 style="color: #fff;">Graphical Representation</h5>
+                <img src="static/images/outputs/facet latest.png" alt="">
+              </div> 
+              <div class="col-twelve" style="margin-bottom: 30px;">
+                <h5 style="color: #fff;">Histogram Representation</h5>
+                <img src="static/images/outputs/facet histogram.png" alt="">
+              </div>
+              <div class="col-twelve" style="margin-bottom: 70px;">
+                <p style="margin-bottom: 5px;">- Action and adventure are the ones the one's that had audience ratings close to critics ratings. -</p>
+                <p style="margin-bottom: 5px;">- These were well rated by the public and critics brought in a lot of money. -</p>
+              </div> 
+            </div>   
+          </div> <!-- end col-twelve --> 
+          <br/><br/>
+        </div> <!-- end row --> 
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+   <section id="about">
+    <div class="row">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">CONCLUSION</h3>
+          <h5>This study through a large volume of data, with anlytics and Visualization for movies between 2000 and 2017:</h5>
+          <div class="col-full" style="margin-top: 10px; color: #505050">            
+            <p style="margin-bottom: 5px;"> - Critics rate more severe than the public ratings. -</p>
+            <p style="margin-bottom: 5px;"> - Audience ratings of the movies were quite close to those of the critics ratings. -</p>
+            <p style="margin-bottom: 5px;"> - Average Movie duration is mostly ranging from <strong>60</strong> minutes and <strong>120</strong> minutes. -</p>
+            <p style="margin-bottom: 5px;"> - Movies makes most Millions which are rated well by critics and audience. -</p>
+            <p style="margin-bottom: 5px;"> - Movies makes most millions if movie duration fall under <strong>60</strong> minutes and <strong>150</strong> minutes (<strong>2h30</strong>) make the most money. -</p>
+            <p style="margin-bottom: 5px;"> - Movies are expected to make less money if they exceed <strong>3</strong> hours duration. -</p>
+            <p style="margin-bottom: 5px;"> - Action, Drama and Mystery movies make most money compared to other genres. -</p>
+            <p style="margin-bottom: 5px;"> - Movies under Animation, Adventure, Biography, Crime, Documentary, Mystery and Sci-fi were highest rated by the public. -</p>
+          </div> <!-- end col-twelve --> 
+          <br/><br/>
+        </div> <!-- end row --> 
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+   <section id="home" style="background-image: url(./static/images/end.jpeg);">
+    <div class="overlay"></div>
+    <div class="home-content-table">  
+       <div class="home-content-tablecell">
+        <div class="row">
+          <div class="col-twelve">            
+            <h3 class="animate-intro"></h3>
+            <!-- <h1 class="animate-intro">
+              Thank You
+            </h1> -->
+            </div>    
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+       </div> <!-- end home-content-tablecell -->        
+    </div> <!-- end home-content-table -->
+   </section> <!-- end home -->
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+   <script src="static/js/jquery.counterup.min.js"></script>
+   <script src="static/js/plugins.js"></script>
+   <script src="static/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.counter').counterUp({
+            delay: 10,
+            time: 5000
+        });
+      });
+    </script>
+</body>
+
+</html>
